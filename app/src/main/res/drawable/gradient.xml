@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:aapt="http://schemas.android.com/aapt"
+        android:width="360dp"
+        android:height="53dp"
+        android:viewportWidth="360"
+        android:viewportHeight="53"
+>
+
+    <group>
+
+        <clip-path
+                android:pathData="M5 0H355C357.761 0 360 2.23858 360 5V48C360 50.7614 357.761 53 355 53H5C2.23858 53 0 50.7614 0 48V5C0 2.23858 2.23858 0 5 0Z"
+        />
+
+        <group
+                android:translateX="-0.031"
+                android:translateY="-24.717"
+                android:pivotX="180"
+                android:pivotY="26.5"
+                android:scaleX="2.197"
+                android:scaleY="101.246"
+                android:rotation="2.953"
+        >
+
+            <path
+                    android:pathData="M0 0V53H360V0"
+            >
+
+                <aapt:attr name="android:fillColor">
+
+                    <gradient
+                            android:type="linear"
+                            android:startX="90"
+                            android:startY="26.5"
+                            android:endX="270"
+                            android:endY="26.5"
+                    >
+
+                        <item
+                                android:color="#EB5757"
+                                android:offset="0.043"
+                        />
+
+                        <item
+                                android:color="#EB5757"
+                                android:offset="0.264"
+                        />
+
+                        <item
+                                android:color="#EB5757"
+                                android:offset="0.349"
+                        />
+
+                        <item
+                                android:color="#BB6BD9"
+                                android:offset="1"
+                        />
+
+                    </gradient>
+
+                </aapt:attr>
+
+            </path>
+
+        </group>
+
+    </group>
+
+</vector>
