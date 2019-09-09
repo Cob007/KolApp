@@ -1,5 +1,6 @@
-package android.michealcob.kolapp;
+package android.michealcob.kolapp.ui;
 
+import android.michealcob.kolapp.R;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
