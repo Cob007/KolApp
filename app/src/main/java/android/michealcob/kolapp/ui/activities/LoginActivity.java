@@ -3,16 +3,16 @@ package android.michealcob.kolapp.ui.activities;
 import android.content.Context;
 import android.content.Intent;
 import android.michealcob.kolapp.R;
-import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 
 import io.github.inflationx.calligraphy3.CalligraphyConfig;
 import io.github.inflationx.calligraphy3.CalligraphyInterceptor;
 import io.github.inflationx.viewpump.ViewPump;
 import io.github.inflationx.viewpump.ViewPumpContextWrapper;
 
-public class SplashActivity extends AppCompatActivity {
+public class LoginActivity extends AppCompatActivity {
 
     @Override
     protected void attachBaseContext(Context newBase) {
@@ -29,14 +29,10 @@ public class SplashActivity extends AppCompatActivity {
                                 .setFontAttrId(R.attr.fontPath)
                                 .build()))
                 .build());
-        setContentView(R.layout.activity_splash);
+        setContentView(R.layout.activity_login);
+    }
 
-        new Handler().postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                startActivity(new Intent(SplashActivity.this, LoginActivity.class));
-                finish();
-            }
-        }, 2000);
+    public void onRegister(View view) {
+        startActivity(new Intent(LoginActivity.this, RegisterActivity.class));
     }
 }

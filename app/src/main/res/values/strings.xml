@@ -1,5 +1,9 @@
 <resources>
     <string name="app_name">kol</string>
     <string name="powered_by_unidots"><i>Powered by unidots</i></string>
+    <string name="login">Login</string>
+    <string name="havent_regi">Havent registered ?</string>
+    <string name="forgot_your">Forgot your password?</string>
+    <string name="recover">Recover</string>
 
 </resources>
