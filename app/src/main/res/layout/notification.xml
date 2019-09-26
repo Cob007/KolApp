@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="8dp"
+    android:background="#0000">
+
+    <ImageView
+        android:id="@+id/env"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/envelope_icon"
+        android:padding="5dp"
+        android:layout_marginLeft="8dp"
+        android:background="@drawable/ellipse"
+        />
+    <FrameLayout
+        android:layout_toRightOf="@id/env"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/view_more"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="11dp">
+
+            <TextView
+                android:id="@+id/welcome_eco"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="#ffffff"
+                android:text="@string/welcome_eco"
+                android:gravity="top"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:text="@string/welcome"
+                android:gravity="top"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="4dp"
+                android:textColor="#CBCAD0"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/line"
+                android:layout_marginTop="2dp"
+                />
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="14dp"
+            android:textSize="12sp"
+            android:text="8 Aug"
+            android:textColor="#CBCAD0"
+            android:layout_gravity="end"
+            android:layout_marginRight="8dp"/>
+    </FrameLayout>
+
+</RelativeLayout>

@@ -3,32 +3,33 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.activities.RegisterActivity"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#FFFFFF"
-    tools:context="ui.activities.RegisterActivity">
+    android:background="#181818"
+    >
 
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingTop="12dp"
-        android:paddingBottom="12dp">
+        >
 
         <ImageView
             android:layout_width="wrap_content"
             android:src="@drawable/ic_back"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
+            android:layout_marginLeft="10dp"
             android:padding="10dp"
-            android:onClick="onLogin"
+            android:onClick="onBack"
             />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Register to Join"
-            android:textColor="#000"
+            android:textColor="#FFFFFF"
             android:textSize="18sp"
             android:layout_gravity="center"
             />
@@ -38,9 +39,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Please provide the following information to register"
-        android:textColor="#313030"
-        android:textSize="13sp"
-        android:layout_marginTop="8dp"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
         android:layout_gravity="center"
         />
 
@@ -67,15 +67,15 @@
                     android:text="Basic Information"
                     android:layout_height="wrap_content"
                     android:textSize="14sp"
-                    android:textColor="#24252F
-"
-                    android:layout_marginTop="10dp"
+                    android:textColor="#ffffff
+" android:layout_marginTop="10dp"
                     />
                 <EditText
                     android:layout_width="match_parent"
+                    android:id="@+id/full_name"
                     android:hint="Full name(as per NRIC/Passport)"
                     android:imeOptions="actionNext"
-                    android:lines="1"
+                    android:maxLines="1"
                     android:textColorHint="#C4C4C4"
                     android:textSize="14sp"
                     android:layout_height="wrap_content"
@@ -94,9 +94,10 @@
                     />
                 <EditText
                     android:layout_width="match_parent"
+                    android:id="@+id/artist_name"
                     android:hint="Artist name"
                     android:imeOptions="actionNext"
-                    android:lines="1"
+                    android:maxLines="1"
                     android:textColorHint="#C4C4C4"
                     android:textSize="14sp"
                     android:layout_height="wrap_content"
@@ -115,9 +116,10 @@
                     />
                 <EditText
                     android:layout_width="match_parent"
+                    android:id="@+id/dob"
                     android:hint="Date of birth"
                     android:imeOptions="actionNext"
-                    android:lines="1"
+                    android:maxLines="1"
                     android:textColorHint="#C4C4C4"
                     android:textSize="14sp"
                     android:layout_height="wrap_content"
@@ -136,9 +138,10 @@
                     />
                 <EditText
                     android:layout_width="match_parent"
+                    android:id="@+id/aoe"
                     android:hint="PArea of Expertise"
                     android:imeOptions="actionNext"
-                    android:lines="1"
+                    android:maxLines="1"
                     android:textColorHint="#C4C4C4"
                     android:textSize="14sp"
                     android:layout_height="wrap_content"
@@ -160,13 +163,14 @@
                     android:layout_height="wrap_content"
                     android:textSize="14sp"
                     android:layout_marginTop="20dp"
-                    android:textColor="#24252F"
+                    android:textColor="#ffffff"
                     />
                 <EditText
                     android:layout_width="match_parent"
+                    android:id="@+id/facebook_link"
                     android:hint="Facebook link"
                     android:imeOptions="actionNext"
-                    android:lines="1"
+                    android:maxLines="1"
                     android:textColorHint="#C4C4C4"
                     android:textSize="14sp"
                     android:layout_height="wrap_content"
@@ -185,9 +189,10 @@
                     />
                 <EditText
                     android:layout_width="match_parent"
+                    android:id="@+id/ig_link"
                     android:hint="Instagram link"
                     android:imeOptions="actionNext"
-                    android:lines="1"
+                    android:maxLines="1"
                     android:textColorHint="#C4C4C4"
                     android:textSize="14sp"
                     android:layout_height="wrap_content"
@@ -206,9 +211,10 @@
                     />
                 <EditText
                     android:layout_width="match_parent"
+                    android:id="@+id/youtube_link"
                     android:hint="Youtube link"
                     android:imeOptions="actionNext"
-                    android:lines="1"
+                    android:maxLines="1"
                     android:textColorHint="#C4C4C4"
                     android:textSize="14sp"
                     android:layout_height="wrap_content"
@@ -227,9 +233,10 @@
                     />
                 <EditText
                     android:layout_width="match_parent"
+                    android:id="@+id/twitter_link"
                     android:hint="Twitter"
                     android:imeOptions="actionNext"
-                    android:lines="1"
+                    android:maxLines="1"
                     android:textColorHint="#C4C4C4"
                     android:textSize="14sp"
                     android:layout_height="wrap_content"
@@ -258,7 +265,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="By clicking submit you agree with the"
-                    android:textColor="#24252F"
+                    android:textColor="#c4c4c4"
                     android:textSize="13sp"
                     android:layout_marginTop="30dp"
                     android:layout_gravity="center"
@@ -273,9 +280,11 @@
                     />
                 <TextView android:layout_width="match_parent"
                     android:background="@drawable/gradient"
+                    android:onClick="onLogin"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:text="Submit"
+                    android:textSize="16sp"
                     android:gravity="center"
                     android:textColor="#fff"
                     />

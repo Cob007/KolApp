@@ -5,5 +5,15 @@
     <string name="havent_regi">Havent registered ?</string>
     <string name="forgot_your">Forgot your password?</string>
     <string name="recover">Recover</string>
+    <string name="btn_text">Click here to register</string>
+    <string name="mark_lee">Mark Lee</string>
+    <string name="female">Female</string>
+    <string name="model_actor">Model/ Actor/ Host / Chef / Yotuber / Cat / Chinese meal / Korean Meal..           view more</string>
+    <string name="i_mean_you_">I mean, you already have a blog post you want to write. Can\'t you just dive in and write it? Why all the pomp and circumstance with this dag-blasted introduction?\n</string>
+    <string name="welcome_eco">Welcome Eco jsdhfsjd fshjdf shdjf sdhf shdj</string>
+    <string name="welcome">Welcome Eco jsdhfsjd fshjdf shdjf sdhf ssdhjf sdhjf shf sjd erw  werw\\nshfjsdhfjsd hfsdjhfds fsdhjf dshfj sdfjshdj</string>
+    <string name="welcome_one">Welcome  eco jdkjsf jfksdf kjsd fskd , sjdfksd fskdf jsdk fsdk , fjsdksdjfksd fjsdk fs fjdsk fjsd fksjdf sdj fkdsfjsd fhjsdhf Structure Security: Contains the security implementation currently available in the application, contains keychain information Extension: Extensions used within the application, current extension includes - FontExtension : Font setting and extension - Extension: General view extensions - LocalisedExtension: This extension is to enable localization within the application - String extension - Bundle extension Customviews: These are classes that enable custom views within the application - RectanglePageControl - CardVIew Controlprotocols: these are the base protocols used for various segmented functionalities within the application - Usermanagement - Baseprotocol - Sessionmanagement</string>
 
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

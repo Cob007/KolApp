@@ -3,7 +3,7 @@ package android.michealcob.kolapp.ui.activities;
 import android.content.Context;
 import android.content.Intent;
 import android.michealcob.kolapp.R;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
@@ -34,5 +34,9 @@ public class RegisterActivity extends AppCompatActivity {
 
     public void onLogin(View view) {
         startActivity(new Intent(RegisterActivity.this, LoginActivity.class));
+    }
+
+    public void onBack(View view) {
+        onBackPressed();
     }
 }

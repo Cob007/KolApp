@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#008577</color>
-    <color name="colorPrimaryDark">#ffff</color>
-    <color name="colorAccent">#EB5757</color>
+    <color name="colorPrimary">#BDFF0000</color>
+    <color name="colorPrimaryDark">#090808</color>
+    <color name="colorAccent">#B9B8B8</color>
+    <color name="colorBtnStart">#EC5757</color>
+    <color name="colorBtnCenter">#DC5C81</color>
+    <color name="colorBtnEnd">#CC64AA</color>
+    <color name="colorBadge">#EC224B</color>
+    <color name="colorText">#FFFFFF</color>
+    <color name="colorBadgeStroke">#BF4F94</color>
+    <color name="colorHomeMessage">#CC5B5145</color>
+    <color name="colorHomeMessageText">#EBEBEB</color>
+    <color name="dark">#181818</color>
 </resources>

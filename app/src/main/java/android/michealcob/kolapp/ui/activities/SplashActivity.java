@@ -4,7 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.michealcob.kolapp.R;
 import android.os.Handler;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
 import io.github.inflationx.calligraphy3.CalligraphyConfig;
@@ -34,7 +34,7 @@ public class SplashActivity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                startActivity(new Intent(SplashActivity.this, LoginActivity.class));
+                startActivity(new Intent(SplashActivity.this, HomeActivity.class));
                 finish();
             }
         }, 2000);

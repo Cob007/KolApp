@@ -3,8 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#ffffff"
-    tools:context=".SplashActivity">
+    android:background="#181818"
+    tools:context=".ui.activities.SplashActivity">
 
     <!-- TODO: Update blank fragment layout -->
     <ImageView
@@ -19,7 +19,7 @@
         android:text="@string/powered_by_unidots"
         android:layout_gravity="bottom|center"
         android:layout_marginBottom="6dp"
-        android:textColor="#424242"
+        android:textColor="#E5E5E5"
         android:textSize="12sp"/>
 
 </FrameLayout>
