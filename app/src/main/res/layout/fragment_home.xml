@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#181818"
+    tools:context=".ui.activities.Fragment.HomeFragment">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="1dp"
+        >
+
+        <FrameLayout
+            android:id="@+id/iv_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="17dp"
+            android:layout_marginRight="21dp"
+            >
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_bucket"
+                android:paddingRight="5dp"
+                />
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="14dp"
+                android:src="@drawable/ic_not"
+                android:layout_gravity="end"/>
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Home"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_gravity="center|center_vertical"
+            />
+    </FrameLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000000"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="19dp"
+            android:layout_marginRight="6dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Week 12"
+                android:textColor="#ffffff"
+                android:textSize="16sp"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="end">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ends in:"
+                        android:textSize="12sp"
+                        android:textColor="#ffffff"
+                        android:layout_gravity="center_vertical"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3:04:00"
+                        android:textSize="12sp"
+                        android:layout_marginLeft="3dp"
+                        android:textColor="#CCFF0000"
+                        android:layout_gravity="center_vertical"
+                        />
+
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="active"
+                    android:textColor="#4FF825"
+                    android:layout_gravity="end"/>
+            </LinearLayout>
+        </FrameLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#C0BEBE"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="19dp"
+            android:layout_marginRight="6dp"
+            android:text="This weeks Changelling is to do this that and jfd dfd thisjskdas dja skdjkas djka sdjkas djksad jsdsajd"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View details"
+            android:textSize="10sp"
+            android:textColor="#ffffff"
+            android:layout_marginRight="7dp"
+            android:layout_gravity="end"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:layout_marginTop="42dp"
+            android:orientation="horizontal"
+            android:background="#26C4C4C4">
+
+            <LinearLayout
+                android:id="@+id/ll_c"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tv_c"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:gravity="center"
+                    android:padding="16dp"
+                    android:textColor="#CCFF0000"
+                    android:text="Current Ranking"
+                    fontPath="fonts/Calibri-Bold.ttf"
+                    tools:ignore="MissingPrefix"
+                    />
+                <View
+                    android:id="@+id/v_c"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/line_red"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"/>
+
+            </LinearLayout>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#181818"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"/>
+            <LinearLayout
+                android:id="@+id/ll_m"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tv_m"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:gravity="center"
+                    android:padding="16dp"
+                    android:textColor="#C0BEBE"
+                    android:text="My Ranking"
+                    fontPath="fonts/Calibri-Bold.ttf"
+                    tools:ignore="MissingPrefix"
+                    />
+                <View
+                    android:id="@+id/v_m"
+                    android:visibility="invisible"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/line_red"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/ll_cr"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:layout_marginBottom="60dp"
+                >
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbars="none"
+                    android:id="@+id/rv_cr"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_mr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="19dp"
+                    >
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/notification_image"
+                        android:layout_width="91dp"
+                        android:layout_height="87dp"
+                        android:layout_gravity="top"
+                        android:src="@drawable/profile_pic_kols"
+                        android:padding="2dp"
+                        android:layout_marginLeft="26dp"
+                        />
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="9dp"
+                        android:layout_marginBottom="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <TextView
+                                android:id="@+id/mark_lee"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Jane mark lee"
+                                android:layout_marginTop="30dp"
+                                android:textAppearance="@style/mark_lee"
+                                android:gravity="center_horizontal|top"
+                                />
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:weightSum="2"
+                                android:layout_marginTop="14dp"
+                                >
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:layout_gravity="center"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="1.1k"
+                                        android:textSize="16sp"
+                                        android:layout_gravity="center"
+                                        android:textColor="#ffffff"
+                                        />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="This week"
+                                        android:textSize="14sp"
+                                        android:layout_gravity="center"
+                                        android:textColor="#ffffff"
+                                        />
+
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:layout_gravity="center"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="2.1M"
+                                        android:textSize="16sp"
+                                        android:layout_gravity="center"
+                                        android:textColor="#ffffff"
+                                        />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Total"
+                                        android:textSize="14sp"
+                                        android:layout_gravity="center"
+                                        android:textColor="#ffffff"
+                                        />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </FrameLayout>
+                </LinearLayout>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbars="none"
+                    android:id="@+id/rv_mr"
+                    android:layout_marginTop="12dp"/>
+            </LinearLayout>
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

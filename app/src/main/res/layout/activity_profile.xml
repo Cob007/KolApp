@@ -149,6 +149,7 @@
         android:layout_height="wrap_content"
         android:paddingLeft="13dp"
         android:paddingTop="9dp"
+        android:onClick="onHomeTwo"
         android:paddingRight="20dp"
         android:paddingBottom="10dp"
         >
@@ -190,10 +191,10 @@
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="13dp"
-        android:layout_marginTop="9dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginBottom="10dp"
+        android:paddingLeft="13dp"
+        android:paddingTop="9dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="10dp"
         >
         <TextView
             android:layout_width="wrap_content"

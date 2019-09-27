@@ -6,19 +6,16 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Context;
 import android.michealcob.kolapp.R;
 import android.michealcob.kolapp.ui.activities.Fragment.GalleryFragment;
+import android.michealcob.kolapp.ui.activities.Fragment.HomeFragment;
+import android.michealcob.kolapp.ui.activities.Fragment.LiveFragment;
 import android.michealcob.kolapp.ui.activities.Fragment.NotificationFragment;
 import android.michealcob.kolapp.ui.activities.Fragment.ProfileFragment;
 import android.michealcob.kolapp.ui.activities.Fragment.QueueFragment;
 import android.michealcob.kolapp.ui.adapter.BottomBarAdapter;
 import android.michealcob.kolapp.ui.common.NoSwipePager;
 import android.os.Bundle;
-import android.util.DisplayMetrics;
-import android.util.TypedValue;
 import android.view.MenuItem;
-import android.view.View;
-import android.view.ViewGroup;
 
-import com.google.android.material.bottomnavigation.BottomNavigationMenuView;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import io.github.inflationx.calligraphy3.CalligraphyConfig;
@@ -26,14 +23,14 @@ import io.github.inflationx.calligraphy3.CalligraphyInterceptor;
 import io.github.inflationx.viewpump.ViewPump;
 import io.github.inflationx.viewpump.ViewPumpContextWrapper;
 
-public class HomeInActivity extends AppCompatActivity {
-
+public class HomeTwoActivity extends AppCompatActivity {
     private NoSwipePager viewPager;
     private BottomBarAdapter pagerAdapter;
     BottomNavigationView navigation;
 
-    QueueFragment queueFragment = new QueueFragment();
+    HomeFragment homeFragment = new HomeFragment();
     NotificationFragment notificationFragment = new NotificationFragment();
+    LiveFragment liveFragment = new LiveFragment();
     GalleryFragment galleryFragment = new GalleryFragment();
     ProfileFragment profileFragment = new ProfileFragment();
 
@@ -52,25 +49,23 @@ public class HomeInActivity extends AppCompatActivity {
                                 .setFontAttrId(R.attr.fontPath)
                                 .build()))
                 .build());
-        setContentView(R.layout.activity_home_in);
-
+        setContentView(R.layout.activity_home_two);
 
         navigation = findViewById(R.id.navigation);
-        viewPager = findViewById(R.id.viewPager);
+        viewPager = findViewById(R.id.vp_two);
 
-        viewPager.setOffscreenPageLimit(4);
+        viewPager.setOffscreenPageLimit(5);
         viewPager.setPagingEnabled(false);
-
 
         pagerAdapter = new BottomBarAdapter(getSupportFragmentManager());
 
-        pagerAdapter.addFragments(queueFragment);
+        pagerAdapter.addFragments(homeFragment);
         pagerAdapter.addFragments(notificationFragment);
+        pagerAdapter.addFragments(liveFragment);
         pagerAdapter.addFragments(galleryFragment);
         pagerAdapter.addFragments(profileFragment);
 
         viewPager.setAdapter(pagerAdapter);
-
 
         navigation.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
@@ -88,9 +83,13 @@ public class HomeInActivity extends AppCompatActivity {
                     case R.id.tab4:
                         viewPager.setCurrentItem(3);
                         return true;
+                    case R.id.tab5:
+                        viewPager.setCurrentItem(4);
+                        return true;
                 }
                 return false;
             }
         });
+
     }
 }

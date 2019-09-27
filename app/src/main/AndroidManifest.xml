@@ -12,12 +12,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.activities.HomeInActivity"
+        <activity android:name=".ui.activities.HomeTwoActivity"
             android:theme="@style/AppTheme.NoActionBar"/>
-        <activity android:name=".ui.activities.DetailActivity"
-            android:theme="@style/AppTheme.NoActionBar"/>
-        <activity android:name=".ui.activities.NotificationActivity"
-            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".ui.activities.HomeInActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.activities.DetailActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.activities.NotificationActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".ui.activities.ProfileActivity"
             android:theme="@style/AppTheme.NoActionBar" />

@@ -78,4 +78,8 @@ public class ProfileActivity extends AppCompatActivity {
     public void onHomeIn(View view) {
             startActivity(new Intent(view.getContext(), HomeInActivity.class));
     }
+
+    public void onHomeTwo(View view) {
+            startActivity(new Intent(view.getContext(), HomeTwoActivity.class));
+    }
 }
